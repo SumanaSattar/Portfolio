@@ -32,7 +32,7 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(11,73,182);
+  background-color: rgba(11, 74, 182, 0.842);
   border-radius: 10px;
   overflow: hidden;
   width: 0;
@@ -51,10 +51,7 @@ body{
     background-position: top;
     height: 90vh;
     float:center;
-    clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);
-    
-    
-    
+    clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);   
 }
 .blackFont{
     color:black;
@@ -78,9 +75,7 @@ body{
     border-radius:50%;
     width:20em;
     height:auto;
-    
-
-    
+        
 }
 .container{
     display:flex;
@@ -89,10 +84,23 @@ body{
     justify-content:space-evenly;
 }
 
+@keyframes moveFromRight{
+    0%{
+        opacity: 0;
+        transform:translateX(-80px);
+
+    }
+    100%{
+      opacity:1;
+      transform:translateX(0);
+    }
+}
 h1,h2{
     margin:15px;
     font-weight:100;
     letter-spacing:3px;
+    animation-name: moveFromRight;
+    animation-duration: 1s;
 }
 .container2{
     position: absolute;
@@ -101,20 +109,20 @@ h1,h2{
     text-align:center;
 
 }
-.navigationbar>ul{
-    background-color:rgba(11,73,182);
-    padding:10px;
-    border-radius:10px;
-}
-
-
 .navigationbar{
     position:fixed;
     top:90%;
+    z-index: 1;
+    background-color:rgba(11,73,182);
+    padding:10px;
     
-    
-    
+    border-radius:10px;
 }
+
+.navigationbar>a {
+    padding:30px;
+}    
+
 
 /*.learnMoreButton:link,.learnMoreButton:visited{*/
 .learnMoreButton{
@@ -134,13 +142,6 @@ h1,h2{
 .learnMoreButton:active{
     transform: translateY(-2px);
     box-shadow:0 5px 10px rgb(0,0,0,0.4);
-}
-li{
-    display:inline;
-   padding:30px; /*
-    background-color:rgba(11,73,182);*/
-    
-
 }
 
 a{
