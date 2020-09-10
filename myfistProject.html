@@ -1,22 +1,119 @@
 <!DOCTYPE html>
+<head>
+<title>Portfolio</title>
 <link href="cssFile.css" rel="stylesheet">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Noto Sans JP">
+</head>
 <html>
   <body>
+      
        
-        <header class="header">
-            <div class="container">
-                <image class="circleBorder" src="images/sumana_profile.jpg" alt="profile picture"></image>
-                <div class="container2">
-                    <h1>Hi,I'm Sumana!</h1>
-                    <p>I moved to Sweden 3 years ago.I am a stay at home mom for past couple of years and now 
-                       I want to start my career and for that I need to develop skills so I joined hyper Island.
-                       I am a student now.
-                    </p>
-                </div>
+        <header class="header" id="header">
+            
+            <image class="circleBorder" src="images/sumana_profile.jpg" alt="profile picture"></image>
+            <div class="container2">
+                <h1>Hi,I'm Sumana!</h1>
+                <h2>I am a Front End Developer.</h2>
+                <a href="#myWork"><input class="learnMoreButton button" type="button" value="View my work"></a>
             </div>
             
             
         </header>
-         
+        
+        <nav class="navigationbar">
+            
+                <a href="#header">Home</a>
+                <a href="#about">About</a>
+                <a href="#myWork">My Work</a>
+                <a href="#contact">Contact</a>
+            
+  
+        </nav>
+        <section class="About" id="about">
+            <h1 class="headings">&ltAbout&gt</h1>
+            <div class="container">
+            <figure class="figureDisplay">
+                
+                <img  src="images/motivated.jpg" alt="motivated image"class="aboutImages"/>
+                <figcaption class="blackFont">Motivated</figcaption>
+            
+            </figure>
+            <figure class="figureDisplay">
+                <img src="images/fast learner.jpg" alt="fast learnere image"class="aboutImages"/>
+                <figcaption class="blackFont">Fast learner</figcaption>
+            </figure>
+            <figure class="figureDisplay">
+                <img src="images/creative.jpg" alt="Creative image"class="aboutImages"/>
+                <figcaption class="blackFont">Creative</figcaption>
+            </figure>
+            <figure class="figureDisplay">
+                <img src="images/skilled.jpg" alt="Skilled image"class="aboutImages"/>
+                <figcaption class="blackFont">Skilled</figcaption>
+            </figure>
+            </div>  
+            <p class="aboutText">I have passion for UI effects and animations.
+                Websites don't have to be static, I love making pages
+                 come to life.I have a strong preference for easy  to use UX design.
+                 My layouts will work on<br> any device, big or small.
+            <h1 class="headings closingTag">&lt/About&gt</h1>
+    
+        </section>
+        
+        <section class="MyWork">
+            <h1 class="headings"id="myWork">&ltMy Work&gt</h1>
+               <div class="container">
+                   <div class="project1Container">
+                      <img class="myWorkImages"src="images/project_1.jpg" alt="project one"/>
+                      <div class="project1discription">
+                            <div class="text">
+                               <h2>Face Detection</h2>
+                               <p>React,Nodejs</p>
+                               <a href=""><input type="button" value="Learn More"class="learnMoreButton" ></a>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="project1Container">
+                      <img class="myWorkImages"src="images/project_2.png" alt="project two"/>
+                      <div class="project1discription">
+                        <div class="text">
+                           <h2>Robort Search</h2>
+                           <p>React,Nodejs</p>
+                           <a href=""><input type="button" value="Learn More"class="learnMoreButton" ></a>
+                        </div>
+                   </div>
+                   </div>
+                   <div class="project1Container">
+                      <img class="myWorkImages"src="images/project_3.png" alt="project three"/>
+                      <div class="project1discription">
+                        <div class="text">
+                           <h2>Tik tok game</h2>
+                           <p>React,Nodejs</p>
+                           <a href=""><input type="button" value="Learn More"class="learnMoreButton" ></a>
+                        </div>
+                   </div>
+                   </div>
+                </div>
+               
+            <h1 class="headings">&lt/My Work&gt</h1>
+
+        </section>
+        <footer id="contact">
+            
+            <div class="backgroudFooter">
+                <div class=".imageLogo">
+                    <h1 class="footerContact">Contact</h1>
+                    <h2 class="footerContact">email:sumana.sattar@hyperisland.se</h2>
+                    <h2 class="footerContact">phone number:072253674</h2>
+                    
+                </div>
+                <div class="imageDisplay">
+                    <image class=" imageheight" src="images/instagram2.webp" alt="instagramlogo"></image>
+                    <image class=" imageheight" src="images/linkdin.png" alt="linkdinlogo"></image>
+                    <image class=" imageheight" src="images/facebook.jpg" alt="facebooklogo"></image>
+               </div> 
+
+            </div>
+        </footer>         
   </body>
 </html>

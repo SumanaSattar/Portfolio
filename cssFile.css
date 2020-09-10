@@ -5,16 +5,48 @@
 body{
     box-sizing: border-box;
     color:white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Noto Sans JP', 'Times New Roman', Times, serif;
     line-height:20px;
     
     padding:30px;
 
 }
+.project1Container{
+    position: relative;
+    width:239px;
+}
+.text {
+    white-space: nowrap; 
+    color: white;
+    /*font-size: 20px;*/
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left:51%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.project1discription{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(11,73,182);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.project1Container:hover .project1discription {
+    width:100%;
+  }
+
+
 .header{
     background-image:linear-gradient(90deg, rgba(11,73,182,1) 0%, rgba(129,23,158,0.7458333675266982) 52%, rgba(223,93,157,1) 100%),
     url(images/backgroud_image.jpg);
-    background-repeat:no-repeat;
     background-size:cover;
     background-position: top;
     height: 90vh;
@@ -24,7 +56,24 @@ body{
     
     
 }
+.blackFont{
+    color:black;
+    
+    display:inline;
+    text-align: center;
+    margin-top:15px;
+}
+.figureDisplay{
+    width:150px;
+    display: flex;
+    flex-flow: column;
+}
+
 .circleBorder{
+    position: absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%,-50%);
     border:3px solid white;
     border-radius:50%;
     width:20em;
@@ -35,19 +84,148 @@ body{
 }
 .container{
     display:flex;
-    flex-direction:row;
-    align-items:center;
-    align-content: center;
-    height: 90vh;
-    padding-left:4em;
+    flex-flow:row;
+    margin-top:50px;
+    justify-content:space-evenly;
+}
 
+h1,h2{
+    margin:15px;
+    font-weight:100;
+    letter-spacing:3px;
 }
 .container2{
-    display:flex;
-    flex-direction: column;
-    padding-right:30em;
-    padding-left:4em;
+    position: absolute;
+    top:40%;
+    left:43%;
+    text-align:center;
+
 }
-p{
-    padding-top:30px;
+.navigationbar>ul{
+    background-color:rgba(11,73,182);
+    padding:10px;
+    border-radius:10px;
+}
+
+
+.navigationbar{
+    position:fixed;
+    top:90%;
+    
+    
+    
+}
+
+/*.learnMoreButton:link,.learnMoreButton:visited{*/
+.learnMoreButton{
+    padding:10px 20px;
+    border-radius:100px;
+    border:0;
+    margin-top:10px;   
+    display: inline-block;
+    text-decoration:none;
+    transition: all .2s;
+    
+}
+.learnMoreButton:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 25px rgb(0,0,0,0.4) ;
+}
+.learnMoreButton:active{
+    transform: translateY(-2px);
+    box-shadow:0 5px 10px rgb(0,0,0,0.4);
+}
+li{
+    display:inline;
+   padding:30px; /*
+    background-color:rgba(11,73,182);*/
+    
+
+}
+
+a{
+
+    text-decoration: none;
+    color:white;
+}
+.aboutImages{
+
+    height:150px;
+
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.About{
+    height:80vh;
+    padding:50px;
+
+}
+.headings{
+    
+    margin-top:50px;
+
+    text-align:center;
+    color:rgb(51, 48, 48);
+    font-weight:400;
+}
+.closingTag{
+    margin-top:40vh;
+}
+.backgroudFooter{
+    background-image:linear-gradient(90deg, rgba(11,73,182,1) 0%, rgba(129,23,158,0.7458333675266982) 52%, rgba(223,93,157,1) 100%),
+    url(images/backgroud_image.jpg);
+    height:60vh;
+
+    background-size:cover;
+    float:center;
+    padding-top:200px;
+    clip-path: polygon(0 0,50% 20%,100% 0,100% 100%,0 100%);
+    
+}
+.myWorkImages{
+    height:250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:5px;
+    box-shadow:3px 5px 25px rgb(131, 128, 128);
+}
+.footerContact{
+    
+    color:white;
+    text-align:center;
+
+    
+}
+.imageDisplay{
+    
+    margin-left:50%;
+    transform:translate(-13%,0);
+
+}
+.imageLogo{
+    position: relative;
+    top:50%;
+    left:50%;
+    text-align: center;
+    
+    
+    
+    
+
+}
+.aboutText{
+    
+    position: absolute;
+    top:160%;
+    right:50%;
+    transform: translateX(50%);
+    color:rgb(48, 46, 46);
+    width:400px;
+    text-align: justify;
+    
+}
+
+.imageheight{
+    height:40px;
+    width:auto;
+    margin:10px;
 }
