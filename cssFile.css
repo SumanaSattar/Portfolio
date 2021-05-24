@@ -8,7 +8,7 @@ body{
     font-family: 'Noto Sans JP', 'Times New Roman', Times, serif;
     line-height:20px;
     
-    padding:30px;
+    
 
 }
 .project1Container{
@@ -115,12 +115,13 @@ h1,h2{
     z-index: 1;
     background-color:rgba(11,73,182);
     padding:10px;
-    
-    border-radius:10px;
+    width:50%;
+  
 }
 
 .navigationbar>a {
-    padding:30px;
+    padding:40px;
+    
 }    
 
 
@@ -168,9 +169,7 @@ a{
     color:rgb(51, 48, 48);
     font-weight:400;
 }
-.closingTag{
-    margin-top:40vh;
-}
+
 .backgroudFooter{
     background-image:linear-gradient(90deg, rgba(11,73,182,1) 0%, rgba(129,23,158,0.7458333675266982) 52%, rgba(223,93,157,1) 100%),
     url(images/backgroud_image.jpg);
@@ -214,14 +213,11 @@ a{
 
 }
 .aboutText{
-    
-    position: absolute;
-    top:160%;
-    right:50%;
     transform: translateX(50%);
     color:rgb(48, 46, 46);
     width:400px;
-    text-align: justify;
+    text-align: center;
+    margin-top:10rem;
     
 }
 
@@ -230,3 +226,30 @@ a{
     width:auto;
     margin:10px;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+.header {
+    height: 40vh;
+    clip-path: polygon(0 0,100% 0,100% 33vh,0 100%); 
+}
+
+.circleBorder{
+    top:11%;
+    left:21%;
+    width:17em;
+}
+.container2{
+    top:15%;
+}
+.navigationbar{
+    top:98vh;
+    width:100%;
+}
+.backgroudFooter{
+    height: 15vh;
+}
+}
+  
