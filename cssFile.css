@@ -4,7 +4,7 @@
 }
 body{
     box-sizing: border-box;
-    color:white;
+   
     font-family: 'Noto Sans JP', 'Times New Roman', Times, serif;
     line-height:20px;
     
@@ -27,8 +27,14 @@ body{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .work{
+
+  .rowContainer{
       display:flex;
+      flex-direction: row;
+  }
+  .colContainer{
+      display:flex;
+      flex-direction: column;
   }
   .projectImage {
       width:30px;
@@ -123,6 +129,7 @@ body{
     justify-content:space-evenly;
 }
 
+
 @keyframes moveFromRight{
     0%{
         opacity: 0;
@@ -137,12 +144,26 @@ body{
 .workImage{
     border-radius: 50%;
 }
-h1,h2{
+.textCenter{
+    text-align: center;
+}
+.vl {
+    border-left: 1px solid rgb(48, 49, 48);
+    height: 190px;
+  }
+.center {
+    justify-content: center;
+}
+.margin{
+    margin:10px;
+}
+.intoHeading{
     margin:15px;
     font-weight:100;
     letter-spacing:3px;
     animation-name: moveFromRight;
     animation-duration: 1s;
+    color:white;
 }
 .container2{
     position: absolute;
@@ -153,12 +174,10 @@ h1,h2{
 }
 .navigationbar{
     position:fixed;
-    top:90%;
     z-index: 1;
     background-color:rgba(11,73,182);
     padding:10px;
-    width:50%;
-  
+    width:100%; 
 }
 
 .navigationbar>a {
@@ -215,7 +234,7 @@ a{
 .backgroudFooter{
     background-image:linear-gradient(90deg, rgba(11,73,182,1) 0%, rgba(129,23,158,0.7458333675266982) 52%, rgba(223,93,157,1) 100%),
     url(images/backgroud_image.jpg);
-    height:60vh;
+    height:15vh;
 
     background-size:cover;
     float:center;
@@ -234,14 +253,32 @@ a{
     
     color:white;
     text-align:center;
+    line-height: 30px;
 
     
 }
+.dotBlue {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(11,73,182,1);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dotPink {
+    height: 15px;
+    width: 15px;
+    background-color:rgba(223,93,157,1);
+    border-radius: 50%;
+    display: inline-block;
+  }
 .imageDisplay{
     
     margin-left:50%;
     transform:translate(-13%,0);
 
+}
+.size {
+    font-size: 25px;
 }
 .imageLogo{
     position: relative;
