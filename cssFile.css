@@ -75,7 +75,7 @@ body{
     color:red;
 }
 .workCard {
-    border: solid rgba(11,73,182) 4px;
+    box-shadow: inset 0px 0px 10px rgba(243, 241, 241, 0.9);
     border-radius:20px;
     padding:10px;
     margin:20px;
@@ -294,7 +294,7 @@ a{
    
     color:rgb(48, 46, 46);
     text-align: center;
-    margin-top:10rem;
+    margin:5rem
     
 }
 
