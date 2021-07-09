@@ -310,10 +310,10 @@ a{
     height:40px;
     width:auto;
     margin:10px;  
-    -webkit-filter: drop-shadow(1px 1px 0 rgb(255, 254, 254))
-    drop-shadow(-1px -1px 0 rgb(255, 254, 254));
-    filter: drop-shadow(1px 1px 0 white) 
-    drop-shadow(-1px -1px 0 white);
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(134, 132, 132))
+    drop-shadow(-1px -1px 0 rgb(134, 132, 132));
+    filter: drop-shadow(1px 1px 0 rgb(134, 132, 132)) 
+    drop-shadow(-1px -1px 0 rgb(134, 132, 132));
    cursor: pointer;
 }
 
