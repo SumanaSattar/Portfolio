@@ -1,12 +1,13 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
-    box-sizing: border-box;
-   
     font-family: 'Noto Sans JP', 'Times New Roman', Times, serif;
     line-height:20px;
+   
+ 
     
     
 
@@ -31,9 +32,11 @@ ul {
     text-align: center;
   }
 
+
   .rowContainer{
       display:flex;
       flex-direction: row;
+      justify-content: center;
   }
   .colContainer{
       display:flex;
@@ -67,7 +70,9 @@ ul {
     background-position: top;
     height: 90vh;
     float:center;
-    clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);   
+    clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);  
+   
+    
 }
 .workDiscibtion {
     display:flex;
@@ -167,6 +172,7 @@ ul {
     animation-name: moveFromRight;
     animation-duration: 1s;
     color:white;
+    
 }
 .container2{
     position: absolute;
@@ -185,6 +191,7 @@ ul {
 
 .navigationbar>a {
     padding:40px;
+
     
 }    
 
@@ -213,6 +220,7 @@ a{
 
     text-decoration: none;
     color:white;
+   
 }
 .aboutImages{
 
@@ -223,6 +231,8 @@ a{
 .About{
    
     padding:50px;
+    text-align: center;
+   
 
 }
 .headings{
@@ -237,7 +247,7 @@ a{
 .backgroudFooter{
     background-image:linear-gradient(90deg, rgba(11,73,182,1) 0%, rgba(129,23,158,0.7458333675266982) 52%, rgba(223,93,157,1) 100%),
     url(images/backgroud_image.jpg);
-    height:18vh;
+    height:35vh;
 
     background-size:cover;
     float:center;
@@ -326,26 +336,80 @@ a{
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  {
+      body{
+          font-size: 3rem;
+          line-height:3.5rem ;
+          font-family: 'Noto Sans JP', 'Times New Roman', Times, serif;
+          width:85vh;
+      }
+
 .header {
     height: 40vh;
     clip-path: polygon(0 0,100% 0,100% 33vh,0 100%); 
+    width:100vh;
 }
 
 .circleBorder{
-    top:11%;
-    left:21%;
-    width:17em;
+    top:20%;
+    left:45%;
+    width:10em;
 }
 .container2{
     top:15%;
-}
-.navigationbar{
-    top:98vh;
+    left:63%;
     width:100%;
+    line-height: 2.5rem;
+    
 }
+.intoHeading {
+    font-size:3.5rem;
+}
+
 .backgroudFooter{
-    height: 15vh;
+    height: 20vh;
+    width:100vh;
+    clip-path: polygon(0 0,40% 20%,100% 0,100% 100%,0 100%);
+   
+   
+   
 }
+
+.w3-container{
+    grid-template-columns: 1fr;  
+   
+}
+.workCard{
+    width:90rem;
+}
+.button{
+    font-size: 50px;
+    width:300px;
+}
+.footerContact{
+    line-height: 4.5rem;
+   
+}
+.imageheight{
+    width:120px;
+    height: auto;
+}
+.aframe{
+    width:250px;
+    height:auto;
+}
+.jsLogo{
+    width:100px;
+}
+.reactLogo{
+    width:170px;
+}
+.fireLogo{
+    width:150px;
+}
+.learnMoreButton{
+    font-size: 45px;
+}
+
 }
   
